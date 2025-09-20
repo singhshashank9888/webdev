@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: aquamarine;
+            height: 600px;
+            width: 800px;
+        }
+
+        .box {
+            background-color: black;
+            border-radius: 70px;
+            height: 100px;
+            width: 100px;
+            animation-name: myAnimation;
+            animation-duration: 3s;
+            animation-delay: 1s;
+            animation-fill-mode: backwards;
+            animation-iteration-count: infinite;
+            animation-timing-function:ease-in-out  ;
+            /* animation-play-state: paused; */
+
+
+        }
+
+        @keyframes myAnimation {
+            10% {
+                transform: translate(0px, 500px);
+            }
+
+            
+
+            60% {
+                transform: translate(350px, 0px);
+            }
+
+         
+            100% {
+                transform: translate(700px, 500px);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+
+</html>

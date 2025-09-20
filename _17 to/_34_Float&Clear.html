@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float And clear</title>
+    <style>
+        /* Float the image to the left */
+        .float-left {
+            float: left;
+            margin-right: 20px;
+            width: 150px;
+        }
+
+        /* Float the image to the right */
+        .float-right {
+            float: right;
+            margin-left: 20px;
+            width: 150px;
+        }
+
+        /* Clear floats after the floated elements */
+        .clearfix {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Float Example</h2>
+    <img src="https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1.jpeg" alt="Left" class="float-left">
+    <img src="https://cdn.prod.website-files.com/62d84e447b4f9e7263d31e94/6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1.jpeg" alt="Right" class="float-right">
+    <p>
+        This paragraph wraps around the floated images. Floats are useful for placing images beside text.
+        You can float elements left or right, and use <code>clear</code> to prevent elements from wrapping around them.
+    </p>
+    <div class="clearfix"></div>
+    <p>
+        This paragraph appears below the floated images because of the <code>clear: both;</code> property.
+    </p>
+</body>
+
+</html>

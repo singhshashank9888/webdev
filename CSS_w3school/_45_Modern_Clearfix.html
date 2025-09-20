@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern -Clearfix</title>
+</head>
+<style>
+    div{
+        border: 2px solid green;
+        padding: 10px;
+
+    }
+    .img1{
+        float: right;
+    }
+    .img2{
+        float:right;
+    }
+    .clickfix::after {
+        content: "";
+        clear:both;
+        display: table;
+
+        /* overflow: auto; */
+
+    }
+</style>
+<body>
+    <h1>Without clearfix</h1>
+    <p>This image is floated to the right. It is also taller than the element containing it, so it overflows outside of its container:</p>
+
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus delectus quod quasi repellendus facilis explicabo molestias, non, tempora obcaecati nostrum, corporis possimus adipisci impedit! Modi, quos. Error neque quos quis.
+        <img class="img1" src="image.png" alt="img1" width="300px">
+    </div>
+    
+
+    <h1 style="clear: right;">With Modern Clearfix</h1>
+    <div class="clickfix">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est repellat exercitationem odio totam ipsam sapiente pariatur laboriosam. Minus, sequi provident?
+        <img src="image.png" alt="img2" class="img2" width="300px">
+    </div>
+
+</body>
+</html>

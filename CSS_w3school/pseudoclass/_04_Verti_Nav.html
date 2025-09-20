@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Nav Bar</title>
+    <style>
+        body {
+            margin: 0;
+            
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+            background-color: rgb(179, 179, 179);
+            list-style-type: none;
+            width: 25%;
+            height: 100%;
+            position: fixed;
+            overflow: auto;
+
+        }
+
+         li a {
+            display: block;
+            text-decoration: none;
+            color: black;
+            padding: 8px 16px ; 
+        }
+
+        a.active {
+            background-color: rgb(6, 177, 46);
+            color: white;
+        }
+
+        div {
+            width: 75%;
+            margin-left: 25%;
+            padding: 1px 10px;
+            height: 1000px;
+        }
+        li a:hover:not(a.active){
+            background-color: darkslategray ;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#News">News</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li><a href="#About">About</a></li>
+    </ul>
+    <div>
+        <h2>Fixed Full-height Side Nav</h2>
+        <h3>Try to scroll this area, and see how the sidenav sticks to the page
+        </h3>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptatem sequi maiores error minima
+            molestias, sunt sit quidem. Culpa quos aperiam voluptatibus assumenda exercitationem totam consequatur
+            voluptatem perspiciatis incidunt. Ducimus est culpa nisi ab illum doloremque! Incidunt aliquid quisquam
+            esse, earum accusantium corrupti ad nemo impedit officia distinctio sapiente eos!</p>
+
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+        <p>Some text..</p>
+
+    </div>
+</body>
+
+</html>

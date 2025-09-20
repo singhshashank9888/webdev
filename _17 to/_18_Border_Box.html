@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-box</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    div>p {
+        background-color: aqua;
+        width: 200px;
+        padding: 16px;
+        border: solid 4px black;
+        margin: 20px;
+        box-sizing: border-box;
+        /*  Width/height includes content, padding, and border. The total size stays as specified.
+ */
+    }
+</style>
+
+<body>
+    <div>
+
+        <p>
+            heehhe
+        </p>
+    </div>
+</body>
+
+</html>

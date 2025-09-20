@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid black;
+            height: 440px;
+            width: 80vw;
+            padding: 3px;
+            margin: 3px;
+        }
+
+        .box1 {
+
+            background-color: aqua;
+
+            position: sticky;
+            top: 0px;
+            height: 111px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            /* top:0;
+            position: absolute;  
+              left: 30px;
+ */
+
+        }
+
+        .box2 {
+            /* position: relative; */
+            background-color: azure;
+            top: 30px;
+            left: 36px;
+            /* z-index: 0; */
+
+
+        }
+
+        .box3 {
+            background-color: bisque;
+            /* left: 8vw;
+            position: fixed;
+            height: 118px  ;
+
+            bottom: 0px; */
+        }
+
+        .box4 {
+            background-color: purple;
+
+
+        }
+
+        .parent {
+            position: absolute;
+            /* transform: (0); */
+            padding: 3px;
+            margin: 34px;
+            border: 2px solid purple;
+
+            /* Exception: transform, filter, or perspective properties can also make an element appear as positioned */
+            /* transform: translate(0); */
+            /* filter: invert(0); */
+            /* perspective: 0em; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+
+</html>

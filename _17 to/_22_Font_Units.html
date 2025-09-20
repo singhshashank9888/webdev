@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Size</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        font-size: 12px;
+    }
+
+    div.box {
+        /* using border box the padding and border is included with the total width */
+        box-sizing: border-box;
+        border: 2px black solid;
+        /* width:1980px; */
+        /* vh and vw are viewport based while % is parent based */
+        height: 10vh;
+        width: 90vw;
+        margin: auto;
+        background-color: aqua;
+        text-align: center;
+        line-height: 10vh;
+    }
+
+    .container {
+        box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 2048px; */
+            width: 80vw;
+            /* height: fit-content; */
+            min-height: 90vh;
+            margin: 50px auto;
+            font-size: 8px;
+            background-color: aquamarine;
+    }
+
+    .container>div {
+        font-size: 2rem;
+        border: 2px solid red;
+        width: 50%;
+    }
+
+    .container>div>div {
+        border: 2px solid blue;
+        width: 50%;
+        color: blueviolet;
+        /* 50% width of parent is inherited  */
+        
+    }
+
+    .mycontent {
+        border: 2px solid black;
+        box-sizing: border-box;
+        margin: 23px auto;
+        color: rgb(0, 0, 0);
+        font-size: 22px;
+        width: 80vmin;
+        width: 80vh;
+        /* vmin adapts to the smallest viewport side. it means if 1080*800 then 800 is used as reference
+vw is always based on viewport width. */
+         
+    }
+    /* Use classes for styling, and use combinators (>, space) for special cases where structure matters. For most cases, prefer classes. */
+</style>
+<script>
+    
+</script>
+<body>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units -->
+    <div class="box">
+        This is a box
+    </div>
+
+    <div class="container">
+        <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis necessitatibus quia quod iste dolorem
+            voluptatem fuga quidem aspernatur. Nihil ipsa sint quae, beatae explicabo saepe impedit laboriosam magni
+            cupiditate expedita voluptates consequatur odit veritatis dolorum doloribus. Iure nemo odit dicta, delectus,
+            modi reiciendis maiores ut quo adipisci libero quam laboriosam nihil voluptate natus nobis earum ad?
+            lorem999
+
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero omnis voluptas est aliquam, dolores rem
+                laudantium nulla maiores odio fugit, totam voluptatem saepe!
+            </div>
+        </div>
+
+        <!-- Expand this to see that this container will adjust its height lorem999 -->
+    </div>
+
+    <div class="mycontent">
+        I am another container
+    </div>
+</body>
+
+</html>

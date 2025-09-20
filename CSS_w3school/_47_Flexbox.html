@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox -HTML</title>
+</head>
+<style>
+    .flex-container {
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: blue;
+    }
+
+    .box1 {
+        background-color: lightblue;
+        padding: 10px;
+        /* float: left; */
+        width: 50%;
+        margin: 10px;
+        text-align: center;
+        line-height: 70px;
+        font-size: 30px;
+    }
+
+    .flex-box {
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: blue;
+
+    }
+
+    .box {
+        background-color: aliceblue;
+        text-align: center;
+        float: left;
+        width: 20%;
+        margin: 10px;
+        line-height: 300px;
+        font-size: 100px;
+
+    }
+</style>
+
+<body>
+
+
+
+    <h1>Flexible Boxes</h1>
+
+    <div class="flex-container">
+        <div class="box1">
+            Box1-This is some text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius iste incidunt
+            perspiciatis sed ad natus soluta laborum, eos placeat accusantium ut, facilis voluptatum harum porro
+            temporibus reiciendis modi cupiditate. Rerum.
+        </div>
+        <div class="box1">
+            Box-2-Height will follow box 1
+        </div>
+    </div>
+
+    <h1>Flexible Boxes</h1>
+
+    <div class="flex-box">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    </div>
+
+
+</body>
+
+</html>

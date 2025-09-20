@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists -HTMl</title>
+</head>
+
+<style>
+    ul.a{
+        list-style-type: circle;
+        list-style-position: inside;
+        background :  red  ;
+        padding: 20px;
+ 
+    }
+     div.color ul li {
+        color: yellow;
+    }
+    ol.b{
+        list-style-type:upper-latin;
+        list-style-position: inside;
+
+    }
+    ul.img{
+        
+        /* list-style-image:  url(item_marker.png)  ;
+        list-style-position: inside;   */
+        /* shorthand */
+
+        list-style: square inside url(item_marker.png);
+         
+        
+    }
+    ul.none{
+        /* to remove default padding and margin  */
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+<body>
+    <!-- unordered Lists -->
+     <div class="color">
+
+         <ul class="a"> List of fruits
+             <li>Apple</li>
+             <li>Banana</li>
+             <li>Grapes</li>
+            </ul>
+        </div>
+    <!-- Ordered Lists -->
+    <ol class="b"> List of fruits
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Grapes</li>
+    </ol>
+    <ul class="img"> List of fruits
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Grapes</li>
+    </ul>
+    <ul class="none"> List of fruits
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Grapes</li>
+    </ul>
+
+
+</body>
+
+</html>

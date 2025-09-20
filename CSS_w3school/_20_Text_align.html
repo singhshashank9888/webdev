@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text allignment </title>
+</head>
+<style>
+    body{
+    background-color:whitesmoke ;
+}
+    p.center{
+        color: blue;
+        border: 5px solid black;
+        max-width: fit-content;
+        text-align: center;
+    }
+    p.right{
+        text-align: right;
+        color: purple;
+        border: 5px solid black;
+
+    }
+    p.left{
+        text-align: left;
+        color: rgb(158, 158, 37);
+        border: 5px solid black;
+
+    }
+    p.justify{
+        text-align-last: justify;
+        color: rgb(158, 158, 37);
+        border: 5px solid black;
+
+
+    }
+    p.direction{
+        direction: rtl;
+        unicode-bidi: bidi-override;
+    }
+</style>
+<body>
+
+    <p class="center">This text line is in center  Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quo!</p>
+    <p class="right">This text line is in rightLorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quo!</p>
+    <p class="left">This text line is in left Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quo!</p>
+    <p class="justify">This text line is in justify Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iure ipsum atque eaque harum maiores unde magnam veniam aliquid deserunt consequuntur animi ducimus sunt voluptatem sed aliquam iste quaerat, assumenda minima blanditiis? Neque nemo sint possimus, ipsum corrupti aliquid laudantium, esse exercitationem ad ipsa similique iste laudantium repellendus. Labore architecto non facere impedit tempore debitis consequatur nobis autem odit dolor doloribus laudantium provident temporibus cumque odio sed </p>
+    <p class="direction">So I can use this to write something in reverse order</p>
+</body>
+</html>

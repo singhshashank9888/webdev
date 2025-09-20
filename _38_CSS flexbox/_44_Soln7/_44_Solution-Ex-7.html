@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex-7</title>
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .right ul {
+            display: flex;
+            gap: 35px;
+        }
+
+        .right ul li {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .right ul li a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+            place-content: center;
+
+        }
+
+        @media screen and (max-width:900px) {
+
+            .container {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .content {
+            height: 22vh;
+            background-color: rgba(241, 239, 239, 0.467);            
+            padding: 30px 0 10px 0;
+        }
+
+        .link {
+            display: flex;
+            justify-content: center;
+            align-content: flex-start;
+            flex-wrap: wrap;
+            margin: 10px;
+
+        }
+
+        .link a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .link1 {
+
+
+            background-color: rgb(74, 170, 208);
+            border-radius: 5px;
+            padding: 10px;
+            color: white;
+            margin-right: 10px;
+        }
+
+        .link1:hover {
+            background-color: skyblue;
+        }
+
+        .link2 {
+
+
+            background-color: rgb(115, 149, 65);
+            border-radius: 5px;
+            padding: 10px;
+            color: white;
+            
+        }
+
+        .link2:hover {
+            background-color: rgb(85, 132, 85);
+        }
+        .heading
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .h1{
+            font-size: 25px;
+            font-weight: bold;
+           
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .h2{
+            font-size: small;
+            font-weight: lighter;
+            padding: 12px 0 15px 0;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <nav>
+                <div class="logo"><img src="Dark-logo.png" alt="logo" height="40px"></div>
+                <div class="right">
+                    <ul>
+                        <li><a href="#Product">Product</a> <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                    stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg> </li>
+                        <li><a href="#link">Pricing</a> <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                    stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg> </li>
+                        <li><a href="#link">Resources</a> <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                    stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg> </li>
+                        <li><a href="#link">About us</a> <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                    stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg> </li>
+                        <li><a href="#link"><img src="navlan.png" alt="img" height="20px"></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="content">
+                <div class="heading">
+                    <div class="h1">
+                        Language
+                    </div>
+                    <div class="h2">Language1</div>
+                </div>
+
+                <div class="link">
+
+                    <div class="link1"><a href="#link">Download 32-bit</a></div>
+                    <div class="link2"><a href="#link">Download 64-bit</a></div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="heading">
+                    <div class="h1">
+
+                        Language
+                    
+                    </div>
+                    <div class="h2">Language1</div>
+                </div>
+                <div class="link">
+
+                    <div class="link1"><a href="#link">Download 32-bit</a></div>
+                    <div class="link2"><a href="#link">Download 64-bit</a></div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="heading">
+                    <div class="h1">
+                        Language
+                    </div>
+                    <div class="h2">Language1</div>
+                </div>
+                <div class="link">
+
+                    <div class="link1"><a href="#link">Download 32-bit</a></div>
+                    <div class="link2"><a href="#link">Download 64-bit</a></div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="heading">
+                    <div class="h1">
+                        Language
+                    </div>
+                    <div class="h2">Language1</div>
+                </div>
+                <div class="link">
+
+                    <div class="link1"><a href="#link">Download 32-bit</a></div>
+                    <div class="link2"><a href="#link">Download 64-bit</a></div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="heading">
+                    <div class="h1">
+                        Language
+                    </div>
+                    <div class="h2">Language1</div>
+                </div>
+                <div class="link">
+
+                    <div class="link1"><a href="#link">Download 32-bit</a></div>
+                    <div class="link2"><a href="#link">Download 64-bit</a></div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="heading">
+                    <div class="h1">
+                        Language
+                    </div>
+                    <div class="h2">Language1</div>
+                </div>
+                <div class="link">
+
+                    <div class="link1"><a href="#link">Download 32-bit</a></div>
+                    <div class="link2"><a href="#link">Download 64-bit</a></div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="heading">
+                    <div class="h1">
+                        Language
+                    </div>
+                    <div class="h2">Language1</div>
+                </div>
+                <div class="link">
+
+                    <div class="link1"><a href="#link">Download 32-bit</a></div>
+                    <div class="link2"><a href="#link">Download 64-bit</a></div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="heading">
+                    <div class="h1">
+                        Language
+                    </div>
+                    <div class="h2">Language1</div>
+                </div>
+                <div class="link">
+
+                    <div class="link1"><a href="#link">Download 32-bit</a></div>
+                    <div class="link2"><a href="#link">Download 64-bit</a></div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="heading">
+                    <div class="h1">
+                        Language
+                    </div>
+                    <div class="h2">Language1</div>
+                </div>
+                <div class="link">
+
+                    <div class="link1"><a href="#link">Download 32-bit</a></div>
+                    <div class="link2"><a href="#link">Download 64-bit</a></div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="heading">
+                    <div class="h1">
+                        Language
+                    </div>
+                    <div class="h2">Language1</div>
+                </div>
+                <div class="link">
+
+                    <div class="link1"><a href="#link">Download 32-bit</a></div>
+                    <div class="link2"><a href="#link">Download 64-bit</a></div>
+                </div>
+            </div>
+     
+
+
+        </div>
+    </main>
+
+</body>
+
+</html>

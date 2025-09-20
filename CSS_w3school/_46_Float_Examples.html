@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float -Example</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    .box{
+        float: left;
+        width: 33.33%;
+        padding: 50px ;
+    }
+    .clearfix::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    .img{
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+
+    }
+    #box{
+        width: 50%;
+        height: 300px;
+    }
+</style>
+<body>
+    <h2>Grid of Boxes</h2>
+<p>Float boxes side by side:</p>
+<div class="clearfix">
+    <div class="box" style="background-color: #bbb;">
+        <p>Lorem et consectetur adipisicing elit. Accusamus,  um dolor sit, amet con  </p>
+    </div>
+    <div class="box" style="background-color: #ccc;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, doloremque.</p>
+    </div>
+    <div class="box" style="background-color: #ddd;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, doloremque.</p>
+    </div>
+
+    <h1 >Pictures :</h1>
+    <div class="clearfix">
+
+        <div class="img">
+            <img src="image.png" alt="img1" style="width: 100%;">
+        </div>
+        <div class="img">
+            <img src="image2.png" alt="img2"style="width: 100%;" >
+        </div>
+        <div class="img">
+            <img src="image3.png" alt="img3"style="width: 100%;" >
+        </div>
+    </div>
+    
+    <h2>Equal Height Boxes</h2>
+<p>Floating boxes with equal heights:</p>
+
+<div class="clearfix">
+  <div class="box" id="box" style="background-color:#bbb">
+  <h2>Box 1</h2>
+  <p>Some content, some content, some content</p>
+  </div>
+  <div class="box" id="box" style="background-color:#ccc">
+  <h2>Box 2</h2>
+  <p>Some content, some content, some content</p>
+  <p>Some content, some content, some content</p>
+  <p>Some content, some content, some content</p>
+  </div>
+</div>
+</body>
+</html>
+ 

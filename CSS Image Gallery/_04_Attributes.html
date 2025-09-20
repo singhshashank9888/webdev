@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attr Selectors</title>
+</head>
+<style>
+    input[type="text"]{
+        display: block;
+        margin-bottom: 10px;
+        width: 150px;
+        background-color: yellow;
+    }
+    input[type="button"]{
+        width:fit-content;
+        display: block;
+        margin-left: 20px;
+    }
+</style>
+<body>
+    <form action="post">
+
+        <label for="fname">First name:</label>
+        <input type="text" name="fname" id="fname">
+        <label for="lname">Last name:</label>
+        <input type="text" name="lname" id="lname">
+     
+        <input type="button" name="button" id="button" value="Example button">
+        
+    </form>
+</body>
+</html>

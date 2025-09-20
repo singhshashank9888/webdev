@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: black;
+            height: 900px;
+            position: relative;
+            
+        }
+        .nav{
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+        
+        .nav ul {
+            background-color: pink;
+          
+            
+        }
+        
+        .nav ul li {
+            display: inline-block;
+            padding: 5px 10px;
+        }
+        
+        .container {
+            position: relative;
+            width: 600px;
+            height: 400px;
+            margin: 10px auto;
+            background-color: green;
+        }
+
+        .box{
+            display: inline-block;
+        }
+        .box1 {
+             position: absolute;
+            top: 40px;
+            left: 50px;
+            height: 80% ;
+            width: 37%;
+            background-color: hotpink;
+        }
+        .box2 {
+            position: absolute;
+            top:40px;
+            right: 50px;
+            height: 80% ;
+            width: 37%;
+            background-color: blue;
+        }
+        .welcome{
+            color: white;
+            font-size: 35px;
+            border: 2px solid white;
+            border-radius: 10px;
+            width: 70%;
+            text-align: center;
+            margin: auto;
+            padding: 15px 30px;
+        }
+        .orange-box {
+            height: 32px;
+            width: 32px;
+            background: orange;
+            position: fixed;
+            bottom:32px;
+            right: 23px;
+            border-radius: 60px;
+        }
+        footer{
+            background-color: white;
+            height: 25px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contacts</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class=" box box1"></div>
+        <div class=" box box2"></div>
+
+    </div>
+    <div class="welcome">
+        Welcome to this Sigma Web Development Express
+    </div>
+    <div class="orange-box">
+
+    </div>
+    <footer>
+        Footer text
+    </footer>
+</body>
+
+</html>

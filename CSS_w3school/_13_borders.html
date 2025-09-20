@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders- HTML</title>
+    <style>
+        body{
+            /* background-image: url(image.png); */
+            background-color: antiquewhite;
+        }
+        p.dotted{
+            color: darkgreen;
+           border-style: dotted ; 
+           border-color: aqua;
+           border-width: 10px 20px;
+
+        }
+        p.solid{
+            color: darkgreen;
+           border-style: solid ; 
+           border-color: red blue yellow green;
+           border-width: 6px 20px;
+        }
+           
+        p.double{
+            color: darkgreen;
+           border-style: double ; 
+           border-color: rgba(255, 0, 0, 0.2);
+           border-width: 20px 40px 50px 70px;
+
+        }
+         
+        p.mixed{
+            /* border-right-style: dashed ;
+            border-left-style: dotted;
+            border-bottom-style: solid ;
+            border-top-style:groove;
+             */
+             border-style: dotted solid groove solid;
+             border-radius: 16px;
+        
+        }
+            
+             #para{
+                border-left: 5px solid red;
+                border-bottom: 5px solid pink;
+             }
+        
+    </style>
+</head>
+<body>
+   <h1>Borders property</h1>
+   <p class="dotted">This paragrapgh has dotted Borders</p>
+   <p class="solid">This paragrapgh has solid Borders</p>
+   <p class="double">This paragrapgh has double Borders</p>
+    <p id="para">This is shorthand</p>
+
+<div>
+
+    <p class="mixed">This has different borders</p>
+</div>
+    
+
+
+
+</body>
+</html>

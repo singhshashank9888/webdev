@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display -JS</title>
+    <style>
+        .imagebox{
+
+            float: left;
+            text-align: center;
+            width:200px;
+            border: 2px solid  gray;
+            margin: 4px;
+            padding: 6px;
+
+        }
+        button{
+            width: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <h3>Difference between display:none and visiblity: hidden</h3>
+    <p><strong>visiblity: hidden </strong>hides the element, but it still takes up space in the layout</p>
+    <p><strong>display:none </strong> removes the element from the document. It does not take up any space </p>
+
+    <div class="imagebox" id="img1" >Box1 <br>
+        <img src="image.png" alt="img1" style="width: 100%;">
+        <button onclick="removeElement()">Remove</button>
+
+    </div>
+    <div class="imagebox" id="img2">Box2 <br>
+
+        <img src="image2.png" alt="img2" width="100%">
+        <button onclick="changeVisibility()">Hide</button>
+
+    </div>
+    <div class="imagebox" id="img3">Box3 <br>
+        <img src="image3.png" alt="img3" width="100%">
+    <button onclick="resetElement()">Reset All</button>
+
+    </div>
+    <script>
+        function removeElement(){
+            document.getElementById("img1").style.display="none";
+        }
+        function changeVisibility() {
+        document.getElementById("img2").style.visibility = "hidden";
+}
+function resetElement() {
+  document.getElementById("img1").style.display = "block";
+  document.getElementById("img2").style.visibility = "visible";
+}
+    </script>
+
+</body>
+</html>

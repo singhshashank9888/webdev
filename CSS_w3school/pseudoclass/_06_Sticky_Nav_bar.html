@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Nav bar</title>
+</head>
+<style>
+    body {
+        font-size: large;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        list-style-type: none;
+        background-color: rgb(61, 61, 61);
+        position: sticky;
+        top:0;
+
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
+
+    div {
+        height: 1000px;
+    }
+    .active{
+        background-color: green;
+    }
+    a:hover:not(.active){
+        background-color: black;
+    }
+</style>
+
+<body>
+    <h1>Scroll Down</h1>
+    <p>Scroll down to see the sticky effect.</p>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#News">News</a></li>
+        <li><a href="#Contact">Contact</a></li>
+    </ul>
+    <div>
+
+        <h3>Sticky Nav bar Example</h3>
+        <p>The Nav bar will <strong>sticky </strong>to the top when you reach its scroll position.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, ipsam nihil doloremque ipsum corrupti,
+            explicabo
+            vero reiciendis eos, non molestias dolor voluptatum natus? Voluptatibus assumenda eveniet suscipit officiis
+            impedit expedita?</p>
+    </div>
+</body>
+
+</html>

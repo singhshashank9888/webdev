@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+</head>
+<style>
+/*     
+    .topnav {
+        background-color: rgb(40, 40, 40);
+    }
+    
+    .topnav a {
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        padding: 15px;
+        text-align: center;
+    }
+    
+    .topnav a:hover {
+        background-color: lightgrey;
+        color: black;
+    }
+    
+    @media screen and (max-width:600px) {
+        .topnav a {
+            width: 100%;
+            display: block;
+        }
+    } */
+    
+    /*For 4 column*/
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    div.col {
+        width: 25%;
+        float: left;
+        padding: 10px;
+        background-color: gray;
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    div.col1 {
+        background-color: rgba(128, 128, 128, 0.898);
+    }
+
+    div.col2 {
+        background-color: rgba(128, 128, 128, 0.603);
+    }
+
+
+    div.col3 {
+        background-color: rgba(128, 128, 128, 0.277);
+    }
+
+    div.col4 {
+        background-color: rgba(128, 128, 128, 0.126);
+    }
+
+
+
+    @media screen and (max-width:992px) {.col{
+            width: 50%;
+        }
+    }
+    @media screen and (max-width: 800px) {.col{
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+
+<body>
+    <h2>Responsive navigation menu</h2>
+    <p>Resize the browser window to see the effect: When the screen is less than 600px, the navigation menu will be
+        displayed vertically instead of horizontally.</p>
+
+    <div class="topnav">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+
+    <h2>Responsive Four Column Layout</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut provident molestias accusamus! Assumenda cumque sit
+        ullam quasi reprehenderit saepe, totam aspernatur voluptates consequuntur praesentium nihil at velit sint nisi
+        odio?</p>
+
+    <div class="row">
+
+        <div class="col1 col">
+            <h3>Column 1</h3>
+            <p>Some text..</p>
+        </div>
+        <div class="col2 col">
+            <h3>Column 2</h3>
+            <p>Some text..</p>
+        </div>
+        <div class="col3 col">
+            <h3>Column 3</h3>
+            <p>Some text..</p>
+        </div>
+        <div class="col4 col">
+            <h3>Column 4</h3>
+            <p>Some text..</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

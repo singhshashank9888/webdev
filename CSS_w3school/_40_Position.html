@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position -HTML</title>
+</head>
+<style>
+        .relative{
+            position: relative;
+            left: 30px;
+            border: 2px solid green ;
+            width: 50%;
+        }
+        .Fixed{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            border: 2px solid green ;
+            width: 50%;
+        }
+        .Lorem{
+            border: 2px solid green;
+            width: 100px;
+        }
+        .sticky{
+            position: sticky;
+            top: 10px;
+            border: 2px solid green;
+            padding: 5px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            opacity: 0.5;
+            /* position: absolute;
+            clip: rect(0px,60px,200px,0px); */
+ 
+
+        }
+        .topleft{
+            position: absolute;
+            top:50%      ;
+            left: 50%;
+ 
+        }
+        .container{
+            position: relative;
+        }
+
+
+</style>
+<body>
+    <h1>Relative Position</h1>
+    <p class="relative"> This has relative Position</p>
+    
+    <h1>Fixed position</h1>
+    <p class="Fixed"> This has fixed position</p>
+    
+    <p class="sticky">This is sticky</p>
+    
+    <br><br> 
+    <p class="Lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos fugiat aperiam perferendis officia libero ab reiciendis ut ex non porro maxime neque saepe asperiores, sint, quod incidunt? Alias id, animi, tempore fugiat perferendis voluptate sit voluptatem, dolorem voluptates vel facere inventore modi est maxime ad vitae? Amet, expedita doloremque placeat deleniti ratione eius odio odit aperiam earum delectus. Eveniet distinctio, sit, possimus sequi ratione veritatis qui itaque sapiente repellat quasi, adipisci quae animi doloremque consequuntur commodi cum error totam fugit odit libero quod quis in id? Obcaecati molestiae est molestias facere  
+    </p>
+    <div class="container">
+
+        <img  src="image.png" alt="img">
+        <p class="topleft">Top left</p>
+    </div>
+</body>
+
+</html>

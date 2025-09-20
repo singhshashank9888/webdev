@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Learn C Programming</title>
+</head>
+
+<script>
+
+    // Initialize CodeMirror
+const codeEditor = CodeMirror(document.getElementById("editor"), {
+  mode: "text/x-csrc",
+  theme: "default",
+  lineNumbers: true,
+});
+
+// Example code for initial display
+const exampleCode = `
+#include <stdio.h>
+
+int main() {
+    printf("Hello, World!");
+    return 0;
+}
+`;
+
+codeEditor.setValue(exampleCode);
+
+</script>
+
+<style>
+    /* Reset default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+/* main {
+    padding: 20px; 
+} */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+/* Add styles for the lesson section */
+.lesson {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    /* border-radius: 5px; */
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.lesson h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.lesson h3 {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.lesson p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.lesson pre {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.lesson code {
+    display: block;
+}
+
+.lesson ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+/* Style the list items in the lesson */
+.lesson li {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Adjust the footer style */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    clear: both;
+}
+/* Default (light) mode styles */
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Dark mode styles */
+.dark-mode body {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Add dark mode styles for the lesson section */
+.dark-mode .lesson {
+    background-color: #222;
+    color: #fff;
+    border-color: #444;
+}
+
+.dark-mode .lesson h2 {
+    color: #fff;
+}
+
+/* Add dark mode styles for the button */
+button#darkModeButton {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Dark mode styles for code blocks */
+.dark-mode .lesson pre {
+    background-color: #000;
+    border: 1px solid #444;
+    color: #fff; /* Set the text color to white */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.dark-mode .lesson code {
+    display: block;
+    color: #fff; /* Set the text color to white */
+}
+
+
+</style>
+<body>
+    <header>
+        <h1>Learn C Programming</h1>
+    </header>
+    <button style="float: right;" id="darkModeButton">Dark Mode</button>
+
+
+    <main>
+        <section id="lessons" class="lesson">
+            <section id="lessons">
+                <article>
+                    <h2>Lesson 1: Constants and Variables</h2>
+                    <p>In C programming, constants and variables are fundamental components of your code. They are used to store and manage data, and they play a crucial role in writing programs.</p>
+            
+                    <h3>Constants</h3>
+                    <p>A constant is a value that cannot be changed during the execution of a program. It is typically used to store values that remain the same throughout the program's execution.</p>
+                    <pre>
+            <code>
+            const int max_attempts = 3;
+            const double pi = 3.14159265359;
+            </code>
+                    </pre>
+            
+                    <h3>Variables</h3>
+                    <p>A variable, on the other hand, is a storage location that can hold different values during the program's execution. You can think of a variable as a named container for data.</p>
+                    <pre>
+            <code>
+            int score = 100;
+            double temperature = 98.6;
+            char grade = 'A';
+            </code>
+                    </pre>
+            
+                    <h3>Declaration and Initialization</h3>
+                    <p>In C, you must declare variables before using them. This involves specifying the data type and, optionally, providing an initial value.</p>
+                    <pre>
+            <code>
+            int count;            // Declaration without initialization
+            double price = 29.99; // Declaration with initialization
+            </code>
+                    </pre>
+            
+                    <h3>Rules for Naming Constants and Variables</h3>
+                    <p>When naming your constants and variables, follow these rules:</p>
+                    <ul>
+                        <li>Names must start with a letter or underscore (_).</li>
+                        <li>Names can include letters, digits, and underscores.</li>
+                        <li>Names are case-sensitive (e.g., 'score' and 'Score' are different).</li>
+                        <li>Avoid using C keywords as names (e.g., 'int' or 'for').</li>
+                    </ul>
+                </article>
+            </section>
+            
+        </section>
+
+        <section id="editor">
+            <!-- Code editor and interactive exercises go here -->
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2023 Your Name
+    </footer>
+     
+    <script>
+        // Function to toggle dark mode
+    function toggleDarkMode() {
+        const body = document.body;
+        body.classList.toggle("dark-mode");
+    }
+    
+    // Get the dark mode button element
+    const darkModeButton = document.getElementById("darkModeButton");
+    
+    // Add a click event listener to the button
+    darkModeButton.addEventListener("click", toggleDarkMode);
+    
+    </script>
+</body>
+</html>

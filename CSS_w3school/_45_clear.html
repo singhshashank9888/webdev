@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear -HTML</title>
+</head>
+<style>
+    .div1{
+        float: left;
+        padding: 10px;
+        border:3px solid green;
+
+    }
+    .div2{
+        float: none;
+        padding: 10px;
+        border:3px solid green;
+
+    }
+    .div3{
+        float:left;
+        border: 3px green solid;
+        padding:10px;
+        
+    }
+    .div4{
+        clear:left;
+        border: 3px green solid;
+        padding:10px;
+
+    }
+    div{
+        border: 3px green solid;
+        padding: 20px;
+    }
+    .img1{
+        float: right;    
+    }
+    .img2{
+        float: right;
+    }
+    /* .clearfix{
+       overflow: auto;
+    } */
+    .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+<body>
+    <h1>Without clear </h1>
+    <div class="div1">div1</div>
+    <div class="div2">div2- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis excepturi iure fugiat laborum reprehenderit deserunt minus culpa ut optio ducimus.</div>
+    <br>
+    <h1 style="clear: right;">With clear </h1>
+    <div class="div3">div3</div>
+    <div class="div4">div4- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis excepturi iure fugiat laborum reprehenderit deserunt minus culpa ut optio ducimus.</div>
+
+   
+   
+    <h2 >Image without clearfix</h2>
+    <div >
+        <img class="img1" src="image.png" alt="img" width="300px;">
+        <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, vel! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim quam incidunt aspernatur amet hic tempora perspiciatis alias minima eos suscipit!</p>
+    </div>
+    <br>
+    <h2  >Image with clearfix</h2>
+    <div class="clearfix">
+        <img class="img2" src="image.png" alt="img" width="300px">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita hic impedit beatae! Nisi facere nostrum a, fugit modi earum? Eaque impedit, placeat quibusdam assumenda accusamus quisquam ipsum quaerat vel labore.
+    </div>
+
+
+ 
+ 
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        position: absolute;
+        right: 0;
+        display: none;
+        min-width: 160px;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+
+    }
+
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropdown-content a {
+
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1
+    }
+
+    .dropdown:hover .dropdown-box {
+        background-color: #3e8e41;
+    }
+
+    .dropdown-img-content {
+        display: none;
+
+    }
+    .dropdown:hover .dropdown-img{
+        opacity: 0.4;
+    }
+
+
+    .dropdown:hover .dropdown-img-content {
+        display: block;
+        width: 200px;
+         
+
+    }
+    .desc{
+        /* padding: 10px; */
+        text-align:center;
+    }
+</style>
+
+<body>
+    <h2>Dropdown Menu</h2>
+    <p>Move the mouse over the button to open the dropdown menu</p>
+
+    <div class="dropdown" style="float:left;">
+        <button class="dropbtn">Left</button>
+        <div class="dropdown-content" style="left:0;">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+    <div class="dropdown" style="float:right;">
+        <button class="dropbtn">Right</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+    <h1 style="clear: both;">Dropdown Image</h1>
+
+
+    <div class="dropdown">
+
+        <img src="img.png" alt="img" width="100px" class="dropdown-img">
+        <div class="dropdown-img-content">
+
+            <img src="img.png" alt="img" width="300px">
+            <div class="desc">Picture above </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

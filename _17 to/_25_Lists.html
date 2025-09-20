@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<style>
+    nav ul li {
+        list-style-type: "🔥";
+        /* list-style-type: none; */
+        border: 2px solid black;
+        background-color: yellow;
+        list-style-position: inside;
+    }
+    .home1{
+        background-color: pink;
+        font-weight: bold;
+        margin-top: 5px;
+
+    }
+</style>
+
+
+<body>
+    <nav>
+        <ul>
+            <li class="home">Home
+                <div class="home1"></div>
+            </li>
+            <li class="about">About
+                <div class="about1"></div>
+            </li>
+            <li class="contact">Contact
+                <div class="contact1"></div>
+            </li>
+        </ul>
+    </nav>
+    <script>
+        const home = document.querySelector(".home");
+        const home1 = document.querySelector(".home1");
+
+        const about = document.querySelector(".about");
+        const about1 = document.querySelector(".about1");
+
+        const contact = document.querySelector(".contact");
+        const contact1 = document.querySelector(".contact1");
+        home.addEventListener("click", () => {
+            if (home1.style.display === "block") {
+                home1.style.display = "none";
+
+            }
+            else {
+
+                home1.textContent = `Hii`;
+                home1.style.display = "block";
+            }
+        })
+    </script>
+</body>
+
+</html>

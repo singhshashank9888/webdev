@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and Tags- HTML</title>
+</head>
+<body>
+<h1>This is a FORM for Teachers</h1>
+
+<form action="post">
+    <div>
+        <label for="username">Enter your username: </label>
+        <input type="text" id="username" name="username" placeholder="Enter your name" autofocus>
+    </div>
+    <div>
+        <h4>Select your gender :</h4>
+    <input type="radio" id="male" name = " gender" value ="male">
+    <label for="male">Male</label>
+    <input type="radio" id="Female" name = " gender" value ="Female">
+    <label for="Female">Female</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="subscribe" name = " subscribe" value ="yes">
+        <label for="subscribe">Subscribe to newsletters</label> 
+    </div>
+    <div>
+        <label for="comment">Enter your comment</label>
+        <br>
+        <textarea name="comment" id="comment" cols="30" rows="10">
+             
+        </textarea>
+    </div>
+    <div>
+        <select name="fruits" id="fruits">
+            <option value = "apple">Apple</option>
+            <option value = "Banana">Banana</option>
+        </select>
+    </div>
+</form>
+    
+</body>
+</html>

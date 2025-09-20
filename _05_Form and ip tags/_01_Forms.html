@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms -HTML</title>
+    <style>
+        p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/submit">
+        <label for="fname">First name:</label> <br>
+        <input type="text" value="Shashank" id="fname" name="fname">
+        <br>
+        <label for="lname">Last name:</label> <br>
+        <input type="text" value="Singh" id="lname" name="lname">
+        <br>
+        <input type="Submit" value="Submit">
+
+        <br>
+        <div>
+            <p>Fav language:</p>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label>
+            <input type="radio" id="css" name="fav_language" value="css">
+            <label for="css">CSS</label>
+            <input type="radio" id="Javascript" name="fav_langage" value="Javascript">
+            <label for="Javascript">Javascript</label>
+             <!-- the association between control and label is explicitly made via the id and for attributes -->
+            <!-- keep name same so that one of the multiple options will be selected  -->
+
+        </div>
+        <div>
+            <form>
+
+
+                <p>What vehicles do you own?</p>
+
+                <input type="checkbox" id="vehicle1" name="vehicle1">
+                <label for="vehicle1">Car</label>
+                <input type="checkbox" name="vehicle2" id="vehicle2">
+                <label for="vehicle2">Bus</label>
+                <input type="checkbox" name="vehicle3" id="vehicle3">
+                <label for="vehicle3">Plane</label>
+            </form>
+
+        </div>
+
+    </form>
+    <!-- Add this script before </body> -->
+    <script>
+        document.querySelector('form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            // Collect form data
+            const fname = document.getElementById('fname').value;
+            const lname = document.getElementById('lname').value;
+            // Create text content
+            let content = `First name: ${fname}\nLast name: ${lname}\n`;
+            // Download as txt
+            const blob = new Blob([content], { type: 'text/plain' }); // Creates a text file from the content
+            const a = document.createElement('a'); // Creates a temporary link element
+            a.href = URL.createObjectURL(blob); // Sets the link to the file's URL
+            a.download = 'formdata.txt'; // Sets the filename for download
+            a.click(); // Simulates a click to start the download
+            URL.revokeObjectURL(a.href); // Cleans up the temporary URL
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables -HTML</title>
+</head>
+<style>
+    
+    table{
+        font-family: Arial, Helvetica, sans-serif;
+        border: 2px solid black;
+        /* border-collapse: collapse; */
+        
+         border-spacing: 30px;
+         width: 100%;
+        
+    }
+    th,td{
+ 
+        border: 2px solid black;
+        text-align: left;
+        padding: 5px;
+        border-radius: 20px;
+    }
+    tr:nth-child(even) {
+        background-color: rgba(128, 128, 128, 0.472);
+    }
+    th:nth-child(odd){
+        background-color: rgba(128, 128, 128, 0.472);
+
+    } 
+</style>
+<body>
+    <h2>HTML Table</h2>
+    
+    <table>
+        <caption style="text-align: left;">Software Engineers salary:</caption>
+        <tr>
+            <th colspan="2" style="width: 70%;">Company</th> 
+            <th>Employee</th>
+            <th>Salary</th>
+                      
+        </tr>
+        <tr>
+            <td>Google</td>
+            <td>Amazon</td>
+            
+            <td>Henry Cavil</td>
+            <td>5000$</td>
+        </tr>
+        <tr>
+            <td>Amazon</td>
+            <td>Facebook</td>
+            <td>Chris Evans</td>
+            <td>7000$</td>
+        </tr>
+        <tr>
+            <td>Facebook</td>
+            <td>Amazon</td>
+            <td>RDJ</td>
+            <td>10000$</td>
+        </tr>
+        
+        
+    </table>
+        
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables -HTML</title>
+</head>
+<style>
+    table,td,th {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        border-bottom: 2px  solid black;
+        border-collapse: collapse;
+        text-align: left;
+     }
+     tr:nth-child(odd):hover{
+        background-color: lightblue;
+     }
+    
+    tr:nth-child(even){
+        background-color: lightsteelblue;
+    }
+    th:nth-child(even),td:nth-child(even){
+        background-color:  lightsteelblue;
+    }
+   
+  
+</style>
+<body>
+    <h2>Striped Table</h2>
+<p>HTML Table :</p>
+
+<table style="width:100%">
+    
+   
+    <col span="3">
+    <col span="2" style="background-color: rgb(224, 226, 252);">
+    <col>
+    <col>
+</colgroup>
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+  </tr>
+  <tr>
+    <td>a</td>
+    <td>a<btd>
+    <td>a</td>
+    <td>a</td>
+    <td>a</td>
+    <td>a</td>
+    <td>a</td>
+  </tr>
+  <tr>
+    <td>b</td>
+    <td>b<dtd>
+    <td>b</td>
+    <td>b</td>
+    <td>b</td>
+    <td>b</td>
+    <td>b</td>
+  </tr>
+  <tr>
+    <td>d</td>
+    <td>c<dtd>
+    <td>c</td>
+    <td>c</td>
+    <td>c</td>
+    <td>c</td>
+    <td>c</td>
+  </tr>
+  <tr>
+    <td>d</td>
+    <td>d</td>
+    <td>d</td>
+    <td>d</td>
+    <td>d</td>
+    <td>d</td>
+    <td>d</td>
+  </tr>
+</table>
+</body>
+</html>

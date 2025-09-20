@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo element</title>
+</head>
+<style>
+        *::selection{
+        background-color: red;
+        color: white;
+        font-weight: bold;
+     
+    }
+    p.class1::first-line {
+        color: red;
+        font: small-caps;
+    }
+
+    p.class2::first-letter {
+        font-size: 100px;
+        color: darkgoldenrod;
+    }
+
+    h1.class3::before {
+        display: block;
+        content: url(item_marker.png);
+    }
+
+    h1.class4::after {
+        display: block;
+        content: url(item_marker.png);
+    }
+
+    .class4 li::marker{
+        color: red;
+        font-size: 30px;
+    }
+</style>
+
+<body>
+    <p class="class1"> <strong>THE FIRST LINE IS CHANGED</strong> Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. At porro doloribus harum cum sit necessitatibus quae animi sunt fugit amet!</p>
+    <p class="class2">THE FIRST WORD IS CHANGED Lorem ipsum dolor sit amet consectetur adipisicing elit. At porro
+        doloribus harum cum sit necessitatibus quae animi sunt fugit amet!</p>
+
+    <h1 class="class3">Some heading</h1>
+    <h1 class="class4">Some heading </h1>
+
+    <div class="class4">
+        <ul>
+            <li>Apple</li>
+            <li>Mango</li>
+            <li>Grape</li>            
+
+        </ul>
+        <ol>
+            <li>Apple</li>
+            <li>Mango</li>
+            <li>Grape</li>  
+        </ol>
+    </div>
+</body>
+
+</html>

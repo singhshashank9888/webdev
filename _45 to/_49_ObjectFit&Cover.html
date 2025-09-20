@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Fit&Cover</title>
+    <style>
+        .container{
+            border:5px solid black;
+            /* background-color: aqua; */
+            background-image: url(https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D);
+            background-position: center center;
+            height :500px;
+            width: 500px;
+            background-repeat: no-repeat;
+        }
+        img{
+            width: 500px;
+            height: 500px;
+            /* object-fit: contain; */
+            object-fit: cover;
+            /* object-position: top right; */
+            object-position:50px 50px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="img">
+    </div>
+</body>
+</html>
