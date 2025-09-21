@@ -4,8 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selectors</title>
+    <style>
+        /* Universal Selector */
+        * {
+            background: #f9f9f9;
+        }
+
+        /* Element Selector */
+        h1 {
+            color: blue;
+        }
+
+        /* Class Selector */
+        .my-class {
+            color: green;
+        }
+
+        /* ID Selector */
+        #my-id {
+            color: red;
+        }
+
+        /* Descendant Selector */
+        div p {
+            font-style: italic;
+        }
+
+        /* Child Selector */
+        ul > li {
+            font-weight: bold;
+        }
+
+        /* Adjacent Sibling Selector */
+        h2 + p {
+            color: orange;
+        }
+
+        /* General Sibling Selector */
+        h3 ~ p {
+            color: purple;
+        }
+
+        /* Attribute Selector */
+        input[type="text"] {
+            border: 2px solid blue;
+        }
+
+        /* Pseudo-class Selector */
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Pseudo-element Selector */
+        p::first-line {
+            font-size: 1.2em;
+            color: teal;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Element Selector</h1>
+    <p>This is a paragraph.</p>
+
+    <div>
+        <p>Descendant Selector (div p)</p>
+    </div>
+
+    <ul>
+        <li>Child Selector (ul > li)</li>
+        <li>Another list item</li>
+    </ul>
+
+    <h2>Adjacent Sibling Selector</h2>
+    <p>This paragraph is right after h2.</p>
+    <p>This paragraph is not right after h2.</p>
+
+    <h3>General Sibling Selector</h3>
+    <p>This paragraph is a sibling of h3.</p>
+    <p>Another sibling paragraph.</p>
+
+    <p class="my-class">Class Selector (.my-class)</p>
+    <p id="my-id">ID Selector (#my-id)</p>
+
+    <input type="text" placeholder="Attribute Selector (input[type='text'])">
+    <input type="password" placeholder="Not styled">
+
+    <a href="#">Pseudo-class Selector (a:hover)</a>
+
+    <p>Pseudo-element Selector (p::first-line) example text for first line styling.</p>
 </body>
 </html>
